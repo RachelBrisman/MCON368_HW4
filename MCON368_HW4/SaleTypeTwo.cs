@@ -7,7 +7,7 @@ public class SaleTypeTwo
 {
     public String Item { get; set; }
     public double TotalPrice { get; set; }
-    public String Address { get; set; }
+    public String Address { get; set; } = "";
     public String Customer { get; set; }
 
     public SaleTypeTwo(SaleTypeOne sale)
@@ -16,12 +16,13 @@ public class SaleTypeTwo
         TotalPrice = sale.PricePerItem * sale.Quantity;
         Customer = sale.Customer;
         if (sale.ExpeditedShipping)
-        {
             Address = sale.Address + " EXPEDITE";
-        }
+        else
+            Address = sale.Address;
     }
-    
-    public String ToString()
+
+
+public override String ToString()
     {
         StringBuilder sale = new StringBuilder();
         sale.Append("Item: " + Item);
@@ -34,25 +35,25 @@ public class SaleTypeTwo
 
 public class GetTypeTwoCollections
 {
-    private SaleTypeTwo[] salesArray { get; set; }
+    private SaleTypeTwo[] SalesArray { get; set; }
 
     public GetTypeTwoCollections(SaleTypeTwo[] sales)
     {
-        salesArray = sales;
+        SalesArray = sales;
     }
 
     public ArrayList GetLLCs()
     {
-        ArrayList result_array = new ArrayList();
-        foreach (var sale in salesArray)
+        ArrayList resultArray = new ArrayList();
+        foreach (var sale in SalesArray)
         {
             if (sale.Customer.ToUpper().Contains("LLC"))
             {
-                result_array.Add(sale);
+                resultArray.Add(sale);
             }
         }
-        result_array.Sort(new SalesTypeTwoComparer());
-        return result_array;
+        resultArray.Sort(new SalesTypeTwoComparer());
+        return resultArray;
     }
 }
 

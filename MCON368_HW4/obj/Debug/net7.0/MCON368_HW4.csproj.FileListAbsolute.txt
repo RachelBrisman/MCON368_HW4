@@ -1,0 +1,15 @@
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\MCON368_HW4.csproj.AssemblyReference.cache
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\MCON368_HW4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\MCON368_HW4.AssemblyInfoInputs.cache
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\MCON368_HW4.AssemblyInfo.cs
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\MCON368_HW4.csproj.CoreCompileInputs.cache
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\bin\Debug\net7.0\MCON368_HW4.exe
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\bin\Debug\net7.0\MCON368_HW4.deps.json
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\bin\Debug\net7.0\MCON368_HW4.runtimeconfig.json
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\bin\Debug\net7.0\MCON368_HW4.dll
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\bin\Debug\net7.0\MCON368_HW4.pdb
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\MCON368_HW4.dll
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\refint\MCON368_HW4.dll
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\MCON368_HW4.pdb
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\MCON368_HW4.genruntimeconfig.cache
+C:\Users\esmul\RiderProjects\MCON368_HW4\MCON368_HW4\obj\Debug\net7.0\ref\MCON368_HW4.dll

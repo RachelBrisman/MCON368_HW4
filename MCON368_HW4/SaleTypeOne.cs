@@ -66,7 +66,7 @@ public class GetTypeOneCollections
                 result_array.Add(sale);
             }
         }
-        result_array.Sort(new SalesTypeOneComparer());
+        result_array.Sort(new SalesComparer());
         return result_array;
     }
     
@@ -102,7 +102,7 @@ public class GetTypeOneCollections
     }
 } 
 
-public class SalesTypeOneComparer : IComparer
+public class SalesComparer : IComparer
 {
     public int Compare(object? x, object? y)
     {
