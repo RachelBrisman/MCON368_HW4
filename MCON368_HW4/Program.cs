@@ -29,13 +29,13 @@ GetTypeTwoCollections get_collections_two = new GetTypeTwoCollections(sales_arra
 
 
 // Question 1 
-ArrayList array_1 = get_collections_one.GetPricePerItemOver10();
+SaleTypeOne[] array_1 = get_collections_one.GetPricePerItemOver10();
 Console.WriteLine("\nPrice per Item is over 10:");
 foreach (SaleTypeOne sale in array_1)
  Console.WriteLine(sale.ToString());
 
 // Question 2
-ArrayList array_2 = get_collections_one.GetQuantityIs1();
+SaleTypeOne[] array_2 = get_collections_one.GetQuantityIs1();
 Console.WriteLine("\nQuantity is 1:");
 foreach (SaleTypeOne sale in array_2)
 { 
@@ -44,7 +44,7 @@ foreach (SaleTypeOne sale in array_2)
 
 
 // Question 3
-ArrayList array_3 = get_collections_one.GetTeaNoExpShipping();
+SaleTypeOne[] array_3 = get_collections_one.GetTeaNoExpShipping();
 Console.WriteLine("\nTea w/o expedited shipping:");
 foreach (SaleTypeOne sale in array_3)
 { 
@@ -52,7 +52,7 @@ foreach (SaleTypeOne sale in array_3)
 }
 
 // Question 4
-ArrayList array_4 = get_collections_one.GetAddressesWhereOrderOver100();
+string[] array_4 = get_collections_one.GetAddressesWhereOrderOver100();
 Console.WriteLine("\nAddresses where order is over 100:");
 foreach (var add in array_4)
 { 
@@ -60,7 +60,7 @@ foreach (var add in array_4)
 }
 
 // Question 5
-ArrayList array_5 = get_collections_two.GetLLCs();
+SaleTypeTwo[] array_5 = get_collections_two.GetLLCs();
 Console.WriteLine("\nLLCs ordered by price:");
 foreach (SaleTypeTwo sale in array_5)
 { 

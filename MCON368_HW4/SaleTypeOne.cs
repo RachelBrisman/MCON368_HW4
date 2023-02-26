@@ -43,49 +43,52 @@ public class GetTypeOneCollections
         salesArray = sales;
     }
 
-    public ArrayList GetPricePerItemOver10()
+    public SaleTypeOne[] GetPricePerItemOver10()
     {
-        ArrayList result_array = new ArrayList();
+        SaleTypeOne[] result_array = {};
         foreach (var sale in salesArray)
         {
             if (sale.PricePerItem > 10.0)
             {
-                result_array.Add(sale);
+                Array.Resize(ref result_array, result_array.Length + 1);
+                result_array[result_array.Length - 1] = sale;
             }
         }
         return result_array;
     }
     
-    public ArrayList GetQuantityIs1()
+    public SaleTypeOne[] GetQuantityIs1()
     {
-        ArrayList result_array = new ArrayList();
+        SaleTypeOne[] result_array = {};
         foreach (var sale in salesArray)
         {
             if (sale.Quantity == 1)
             {
-                result_array.Add(sale);
+                Array.Resize(ref result_array, result_array.Length + 1);
+                result_array[result_array.Length - 1] = sale;
             }
         }
-        result_array.Sort(new SalesComparer());
+        Array.Sort(result_array, new SalesComparer());
         return result_array;
     }
     
-    public ArrayList GetTeaNoExpShipping()
+    public SaleTypeOne[] GetTeaNoExpShipping()
     {
-        ArrayList result_array = new ArrayList();
+        SaleTypeOne[] result_array = {};
         foreach (var sale in salesArray)
         {
             if (sale.Item == "tea" && !sale.ExpeditedShipping)
             {
-                result_array.Add(sale);
+                Array.Resize(ref result_array, result_array.Length + 1);
+                result_array[result_array.Length - 1] = sale;
             }
         }
         return result_array;
     }
     
-    public ArrayList GetAddressesWhereOrderOver100()
+    public string[] GetAddressesWhereOrderOver100()
     {
-        ArrayList result_array = new ArrayList();
+        string[] result_array= {};
         var order_total = 0.0;
         foreach (var sale in salesArray)
         {
@@ -95,7 +98,8 @@ public class GetTypeOneCollections
         {
             foreach (var sale in salesArray)
             {
-                result_array.Add(sale.Address);
+                Array.Resize(ref result_array, result_array.Length + 1);
+                result_array[result_array.Length - 1] = sale.Address;
             }
         }
         return result_array;

@@ -42,18 +42,19 @@ public class GetTypeTwoCollections
         SalesArray = sales;
     }
 
-    public ArrayList GetLLCs()
+    public SaleTypeTwo[] GetLLCs()
     {
-        ArrayList resultArray = new ArrayList();
+        SaleTypeTwo[] result_array = {};
         foreach (var sale in SalesArray)
         {
             if (sale.Customer.ToUpper().Contains("LLC"))
             {
-                resultArray.Add(sale);
+                Array.Resize(ref result_array, result_array.Length + 1);
+                result_array[result_array.Length - 1] = sale;
             }
         }
-        resultArray.Sort(new SalesTypeTwoComparer());
-        return resultArray;
+        Array.Sort(result_array, new SalesTypeTwoComparer());
+        return result_array;
     }
 }
 
